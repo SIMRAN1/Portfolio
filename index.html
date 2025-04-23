@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simranpreet Kaur - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Sacramento&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #e0c3fc, #8ec5fc, #ff9a9e);
+            min-height: 100vh;
+        }
+
+        .container {
+            padding: 8rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            color: #4a4a4a;
+        }
+
+        h1 {
+            font-family: 'Sacramento', cursive;
+            font-size: 4rem;
+            color: #5e2b8b;
+        }
+
+        p {
+            font-size: 1.25rem;
+            color: #6b7280;
+            margin-top: 1rem;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            margin: 0 15px;
+            color: #ffffff;
+            font-size: 2rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #5e2b8b;
+        }
+
+        .button {
+            background-color: #f05454;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.125rem;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #ff9a9e;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 20px;
+            text-align: left;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card h3 {
+            color: #5e2b8b;
+            font-size: 1.5rem;
+        }
+
+        .card p {
+            font-size: 1rem;
+            color: #4a4a4a;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Simranpreet Kaur</h1>
+    <p>Software Development Engineer - 2 | Backend & Full Stack Developer</p>
+
+    <div class="social-icons">
+        <a href="https://github.com/SIMRAN1" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/simranpreet-kaur-645087128/" target="_blank">
+            <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="/resume/Resume_simrankaur.pdf" target="_blank">
+            <i class="fas fa-file-alt"></i> Resume
+        </a>
+    </div>
+
+    <div class="card-container">
+        <div class="card">
+            <h3>About Me</h3>
+            <p>
+                Passionate software engineer with experience in building scalable web applications. Currently working as a Backend & Full Stack Developer.
+            </p>
+        </div>
+        <div class="card">
+            <h3>Skills</h3>
+            <p>
+                - Backend Development: Node.js, Express.js<br>
+                - Frontend Development: React.js, HTML, CSS, JavaScript<br>
+                - Databases: MongoDB, MySQL<br>
+                - Version Control: Git
+            </p>
+        </div>
+        <div class="card">
+            <h3>Contact Me</h3>
+            <p>If you would like to collaborate, feel free to reach out!</p>
+            <a href="mailto:simranpreetkaur@example.com" class="button">Contact Me</a>
+        </div>
+    </div>
+</div>
+
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
