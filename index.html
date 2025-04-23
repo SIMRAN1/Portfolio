@@ -29,7 +29,6 @@
     h1 {
       margin: 0;
       font-size: 2.5rem;
-      
     }
     p {
       
@@ -46,7 +45,6 @@
       padding: 1rem;
       margin-bottom: 0.5rem;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
-      
     }
     .card:hover {
       transform: translateY(-5px);
@@ -90,7 +88,7 @@
       0% {opacity: 0; transform: translateY(-20px);}
       100% {opacity: 1; transform: translateY(0);}
     }
-      @media print {
+    @media print {
       .contact-print {
         display: block !important;
         font-size: 9px;
@@ -173,36 +171,16 @@
       color: white !important;
     }
   </style>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-  <script>
-    function downloadPDF() {
-      const element = document.getElementById('portfolio');
-      const opt = {
-        margin:       0.2,
-        filename:     'Simranpreet_Kaur_Resume.pdf',
-        image:        { type: 'jpeg', quality: 0.98 },
-        html2canvas:  { scale: 2 },
-        jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
-      };
-      html2pdf().from(element).set(opt).save();
-    }
-  </script>
 </head>
 <body>
   <header>
-    <div class="contact-print" style="display: none; text-align: center; margin-top: 5px;">
-      📧 simranpreet.skaur@gmail.com | 🔗 linkedin.com/in/simranpreet-kaur-645087128 | 💻 github.com/SIMRAN1 | 📱 +91-8299750691
-    </div>
     <h1 style="font-size: 2.5rem; letter-spacing: 0.5px; animation: fadeInDown 1s ease-in-out;">Simranpreet Kaur</h1>
     <p style="font-size: 1.4rem; margin-bottom: 1.2rem; animation: fadeInUp 1s ease-in-out; color: white;">Senior Software Engineer | Backend Developer | Open Source Contributor</p>
     <div class="links" style="margin: 0.8rem 0 1.2rem; display: flex; justify-content: center; flex-wrap: wrap; gap: 0.5rem;">
       <a href="mailto:simranpreet.skaur@gmail.com" class="download-btn">Email</a>
       <a href="https://linkedin.com/in/simranpreet-kaur-645087128" class="download-btn" target="_blank">LinkedIn</a>
       <a href="https://github.com/SIMRAN1" class="download-btn" target="_blank">GitHub</a>
-      <a href="#" onclick="downloadPDF()" class="download-btn">Download Resume</a>
-    </div>
-  </div>
-      
+      <a href="https://drive.google.com/file/d/1jnKZGl_K8U4UqZwXjc2oaM4CbZrsoBcm/view?usp=sharing" class="download-btn" target="_blank">Download Resume</a>
     </div>
   </header>
   <div id="portfolio" class="container" style="padding: 3rem 2rem;">
