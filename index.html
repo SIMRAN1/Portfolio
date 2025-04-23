@@ -91,6 +91,11 @@
       100% {opacity: 1; transform: translateY(0);}
     }
       @media print {
+      .contact-print {
+        display: block !important;
+        font-size: 9px;
+        margin-bottom: 6px;
+      }
       * {
         box-sizing: border-box;
       }
@@ -185,8 +190,11 @@
 </head>
 <body>
   <header>
-    <h1 style="font-size: 2.2rem; letter-spacing: 0.5px; margin-bottom: 0.5rem;">Simranpreet Kaur</h1>
-    <p style="font-size: 1.4rem; margin-bottom: 1.2rem; animation: fadeInUp 1s ease-in-out;">Senior Software Engineer | Backend Developer | Open Source Contributor</p>
+    <div class="contact-print" style="display: none; text-align: center; margin-top: 5px;">
+      📧 simranpreet.skaur@gmail.com | 🔗 linkedin.com/in/simranpreet-kaur-645087128 | 💻 github.com/SIMRAN1 | 📱 +91-8299750691
+    </div>
+    <h1 style="font-size: 2.5rem; letter-spacing: 0.5px; animation: fadeInDown 1s ease-in-out;">Simranpreet Kaur</h1>
+    <p style="font-size: 1.4rem; margin-bottom: 1.2rem; animation: fadeInUp 1s ease-in-out; color: white;">Senior Software Engineer | Backend Developer | Open Source Contributor</p>
     <div class="links" style="margin: 0.8rem 0 1.2rem; display: flex; justify-content: center; flex-wrap: wrap; gap: 0.5rem;">
       <a href="mailto:simranpreet.skaur@gmail.com" class="download-btn">Email</a>
       <a href="https://linkedin.com/in/simranpreet-kaur-645087128" class="download-btn" target="_blank">LinkedIn</a>
@@ -198,11 +206,11 @@
     </div>
   </header>
   <div id="portfolio" class="container" style="padding: 3rem 2rem;">
-    <div class="card">
+    <div class="card" style="animation: fadeInUp 1s ease-in-out;">
       <h2>About Me</h2>
       <p>I am a Senior Software Engineer with over 6 years of experience designing and building robust, scalable backend systems. My core strengths lie in architecting distributed services, implementing microservice-based infrastructures, and optimizing data pipelines to ensure reliability and performance at scale. Passionate about clean code, thoughtful design, and mentoring others, I thrive in high-impact engineering teams that solve real-world problems.</p>
     </div>
-    <div class="card">
+    <div class="card" style="animation: fadeInUp 1s ease-in-out;">
       <h2>Experience</h2>
       <ul>
         <li><strong>Microsoft</strong> – Software Development Engineer II (L62) | Backend Developer, Distributed Systems</li>
@@ -211,7 +219,7 @@
         <li><strong>O.C. Tanner</strong> – Backend Developer | Enterprise SaaS Development</li>
       </ul>
     </div>
-    <div class="card">
+    <div class="card" style="animation: fadeInUp 1s ease-in-out;">
       <h2>Skills</h2>
       <ul>
         <li>Java, Spring Boot, Kafka, HBase, SQL, Spark, Storm</li>
@@ -219,7 +227,7 @@
         <li>C++, Python, Git, Docker</li>
       </ul>
     </div>
-    <div class="card" style="padding: 0.5rem; margin-bottom: 0.3rem;">
+    <div class="card" style="animation: fadeInUp 1s ease-in-out;">
       <h2>Projects</h2>
       <ul>
         <li><strong>Microsoft Defender for Office</strong> – Java, Cosmos, AI, Event Hubs</li>
@@ -231,7 +239,7 @@
     <div class="card" style="padding: 0.5rem; margin-bottom: 0.3rem;">
       <h2>Open Source & Community</h2>
       <ul>
-        <li>Mentor @ Fossasia | Contributor @ Mozilla, Systers</li>
+        <li>Google Code-In Mentor @ Fossasia | Contributor @ Mozilla, Systers</li>
         <li>Speaker at Fossasia Developer Conference, Jugaad Fest</li>
         <li>Women Who Code, Women in Competitive Programming</li>
       </ul>
@@ -239,6 +247,7 @@
     <div class="card" style="padding: 0.5rem; margin-bottom: 0.3rem;">
       <h2>Achievements</h2>
       <ul>
+        <li>Won Hackathon at Microsoft (Gem Level)</li>
         <li>3⭐ Coder at CodeChef</li>
         <li>Conducted college workshops on competitive coding and Open Source Software</li>
       </ul>
