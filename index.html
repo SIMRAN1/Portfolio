@@ -22,7 +22,7 @@
     header {
       background: linear-gradient(90deg, var(--primary), var(--accent));
       color: white;
-      padding: 1rem;
+      padding: 0.5rem;
       text-align: center;
       position: relative;
     }
@@ -44,7 +44,7 @@
       border-radius: 16px;
       box-shadow: none;
       padding: 1rem;
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       
     }
@@ -91,11 +91,14 @@
       100% {opacity: 1; transform: translateY(0);}
     }
       @media print {
+      * {
+        box-sizing: border-box;
+      }
       html, body {
         width: 100%;
         height: auto;
-        font-size: 12px;
-        line-height: 1.4;
+        font-size: 10px;
+        line-height: 1.2;
       }
       body {
         background: white !important;
@@ -164,14 +167,21 @@
   <header>
     <h1>Simranpreet Kaur</h1>
     <p>Senior Software Engineer (6+ years) | Backend Specialist | Open Source Advocate</p>
-    <div class="links">
-      <a href="mailto:simranpreet.skaur@gmail.com">Email</a>
-      <a href="https://linkedin.com/in/simranpreet-kaur-645087128" target="_blank">LinkedIn</a>
-      <a href="https://github.com/SIMRAN1" target="_blank">GitHub</a>
+    <div class="links" style="margin: 0.5rem 0 0.8rem;">
+      <a href="mailto:simranpreet.skaur@gmail.com" class="download-btn">Email</a>
+      <a href="https://linkedin.com/in/simranpreet-kaur-645087128" class="download-btn" target="_blank">LinkedIn</a>
+      <a href="https://github.com/SIMRAN1" class="download-btn" target="_blank">GitHub</a>
       <a href="#" onclick="downloadPDF()" class="download-btn">Download Resume</a>
+    </div>
+  </div>
+      
     </div>
   </header>
   <div id="portfolio" class="container">
+    <div class="card about">
+      <h2>About Me</h2>
+      <p>I am a Senior Software Engineer with over 6 years of experience designing and building robust, scalable backend systems. My core strengths lie in architecting distributed services, implementing microservice-based infrastructures, and optimizing data pipelines to ensure reliability and performance at scale. Passionate about clean code, thoughtful design, and mentoring others, I thrive in high-impact engineering teams that solve real-world problems.</p>
+    </div>
     <div class="card experience">
       <h2>Experience</h2>
       <ul>
