@@ -22,17 +22,17 @@
     header {
       background: linear-gradient(90deg, var(--primary), var(--accent));
       color: white;
-      padding: 2rem;
+      padding: 1rem;
       text-align: center;
       position: relative;
     }
     h1 {
       margin: 0;
       font-size: 2.5rem;
-      animation: fadeInDown 1s ease-in-out;
+      
     }
     p {
-      animation: fadeInUp 1s ease-in-out;
+      
     }
     .container {
       max-width: 1100px;
@@ -42,11 +42,11 @@
     .card {
       background: var(--card-bg);
       border-radius: 16px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-      padding: 1.5rem 2rem;
-      margin-bottom: 2rem;
+      box-shadow: none;
+      padding: 1rem;
+      margin-bottom: 1rem;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
-      animation: fadeInUp 0.8s ease forwards;
+      
     }
     .card:hover {
       transform: translateY(-5px);
@@ -91,6 +91,12 @@
       100% {opacity: 1; transform: translateY(0);}
     }
       @media print {
+      html, body {
+        width: 100%;
+        height: auto;
+        font-size: 12px;
+        line-height: 1.4;
+      }
       body {
         background: white !important;
         color: black !important;
@@ -157,7 +163,7 @@
 <body>
   <header>
     <h1>Simranpreet Kaur</h1>
-    <p>Senior Software Engineer | Backend Specialist | Open Source Advocate</p>
+    <p>Senior Software Engineer (6+ years) | Backend Specialist | Open Source Advocate</p>
     <div class="links">
       <a href="mailto:simranpreet.skaur@gmail.com">Email</a>
       <a href="https://linkedin.com/in/simranpreet-kaur-645087128" target="_blank">LinkedIn</a>
@@ -169,10 +175,10 @@
     <div class="card experience">
       <h2>Experience</h2>
       <ul>
-        <li><strong>Microsoft</strong> – Software Development Engineer II (2022 - Present)</li>
-        <li><strong>Flipkart</strong> – Software Development Engineer II (2021 - 2022)</li>
-        <li><strong>J.P. Morgan</strong> – Associate, Full Stack Developer (2021)</li>
-        <li><strong>O.C. Tanner</strong> – Full Stack Developer (2019 - 2021)</li>
+        <li><strong>Microsoft</strong> – Software Development Engineer II (L62)</li>
+        <li><strong>Flipkart</strong> – Software Development Engineer II</li>
+        <li><strong>J.P. Morgan</strong> – Associate, Backend Developer</li>
+        <li><strong>O.C. Tanner</strong> – Backend Developer</li>
       </ul>
     </div>
     <div class="card skills">
@@ -186,7 +192,7 @@
     <div class="card projects">
       <h2>Projects</h2>
       <ul>
-        <li><strong>Microsoft Defender Simulation Tool</strong> – C#, Cosmos, AI, Event Hubs</li>
+        <li><strong>Microsoft Defender for Office</strong> – Java, Cosmos, AI, Event Hubs</li>
         <li><strong>Flipkart General Accounting Ledger</strong> – Java, Spring Boot, HBase</li>
         <li><strong>Event Publisher Pipeline</strong> – Kafka, Storm</li>
         <li><strong>Open Event iOS App</strong> – <a href="https://github.com/fossasia/open-event-attendee-ios" target="_blank">GitHub</a></li>
