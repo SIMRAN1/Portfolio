@@ -34,18 +34,6 @@
     p {
       animation: fadeInUp 1s ease-in-out;
     }
-    .profile-pic {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid white;
-      position: absolute;
-      top: 1rem;
-      left: 1rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-      animation: fadeIn 1.5s ease-in-out;
-    }
     .container {
       max-width: 1100px;
       margin: auto;
@@ -102,25 +90,82 @@
       0% {opacity: 0; transform: translateY(-20px);}
       100% {opacity: 1; transform: translateY(0);}
     }
-    @keyframes fadeIn {
-      from {opacity: 0;}
-      to {opacity: 1;}
+      @media print {
+      body {
+        background: white !important;
+        color: black !important;
+      }
+      header {
+        background: white !important;
+        color: black !important;
+        text-align: left;
+        padding: 1rem 2rem;
+      }
+      .links {
+        display: none;
+      }
+      .container {
+        padding: 1rem;
+        margin: 0;
+      }
+      .card {
+        box-shadow: none !important;
+        border: 1px solid #ccc;
+        page-break-inside: avoid;
+        padding: 1rem;
+      }
+      .card h2 {
+        color: black !important;
+        border-bottom: 1px solid #aaa;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+      }
+    }
+      .download-btn {
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      background: white;
+      color: var(--primary) !important;
+      font-weight: bold;
+      border: 2px solid var(--primary);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+    .download-btn:hover {
+      transform: translateY(-2px);
+      background: var(--primary);
+      color: white !important;
     }
   </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script>
+    function downloadPDF() {
+      const element = document.getElementById('portfolio');
+      const opt = {
+        margin:       0.2,
+        filename:     'Simranpreet_Kaur_Resume.pdf',
+        image:        { type: 'jpeg', quality: 0.98 },
+        html2canvas:  { scale: 2 },
+        jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
+      };
+      html2pdf().from(element).set(opt).save();
+    }
+  </script>
 </head>
 <body>
   <header>
-    
     <h1>Simranpreet Kaur</h1>
     <p>Senior Software Engineer | Backend Specialist | Open Source Advocate</p>
     <div class="links">
       <a href="mailto:simranpreet.skaur@gmail.com">Email</a>
       <a href="https://linkedin.com/in/simranpreet-kaur-645087128" target="_blank">LinkedIn</a>
       <a href="https://github.com/SIMRAN1" target="_blank">GitHub</a>
-      <a href="https://drive.google.com/file/d/1l0laXZMgFJnT6H8xIx9EwPIgS-cKQiS5/view?usp=sharing" target="_blank" style="background: #ffeaa7; color: #2d3436;">Download Resume</a>
+      <a href="#" onclick="downloadPDF()" class="download-btn">Download Resume</a>
     </div>
   </header>
-  <div class="container">
+  <div id="portfolio" class="container">
     <div class="card experience">
       <h2>Experience</h2>
       <ul>
